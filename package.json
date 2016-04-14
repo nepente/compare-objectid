@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A simple way to compare Mongo ObjectId to another ObjectId or String :)",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nepente/compare-objectid.git"
+  },
   "scripts": {
     "test": "mocha",
     "test:watch": "mocha -w",
