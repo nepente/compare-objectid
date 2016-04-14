@@ -70,6 +70,26 @@ describe('compareObjectIDs', function() {
     expect(saoIguais).to.be.equal(false);
   });
 
+  it('Deve ser \'false\' se o primeiro parametro for Object', function() {
+    var saoIguais = compareObjectIDs({}, new ObjectID());
+    expect(saoIguais).to.be.equal(false);
+  });
+
+  it('Deve ser \'false\' se o segundo parametro for Object', function() {
+    var saoIguais = compareObjectIDs(new ObjectID(), {});
+    expect(saoIguais).to.be.equal(false);
+  });
+
+  it('Deve ser \'false\' se o primeiro parametro for Date', function() {
+    var saoIguais = compareObjectIDs(new Date(), new ObjectID());
+    expect(saoIguais).to.be.equal(false);
+  });
+
+  it('Deve ser \'false\' se o segundo parametro for Date', function() {
+    var saoIguais = compareObjectIDs(new ObjectID(), new Date());
+    expect(saoIguais).to.be.equal(false);
+  });
+
   it('Deve retornar uma função parcialmente aplicada se' +
      ' apenas um parâmetro for fornecido', function() {
     var objID1 = new ObjectID();

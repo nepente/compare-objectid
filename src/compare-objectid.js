@@ -16,12 +16,16 @@ function compareObjectIDs(objID1, objID2) {
     return false;
   }
 
-  if (!(objID1 instanceof ObjectID)) {
+  if (typeof(objID1) === 'string') {
     comparableObjID1 = new ObjectID(objID1);
   }
 
-  if (!(objID2 instanceof ObjectID)) {
+  if (typeof(objID2) === 'string') {
     comparableObjID2 = new ObjectID(objID2);
+  }
+
+  if (!(comparableObjID1 instanceof ObjectID) || !(comparableObjID2 instanceof ObjectID)) {
+    return false;
   }
 
   return comparableObjID1.equals(comparableObjID2);
