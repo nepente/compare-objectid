@@ -1,0 +1,21 @@
+{
+  "name": "compare-objectid",
+  "version": "1.0.0",
+  "description": "A simple way to compare Mongo ObjectId to another ObjectId or String :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint **/*.js"
+  },
+  "author": "Nepente - Artesanato de Software",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^7.0.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "mongodb": "^2.1.16"
+  }
+}
