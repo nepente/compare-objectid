@@ -8,7 +8,7 @@
     "lint": "eslint **/*.js"
   },
   "author": "Nepente - Artesanato de Software",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^2.7.0",
