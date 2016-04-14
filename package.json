@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
+    "test:watch": "mocha -w",
     "lint": "eslint **/*.js"
   },
   "author": "Nepente - Artesanato de Software",
