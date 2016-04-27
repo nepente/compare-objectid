@@ -5,7 +5,7 @@
 ## Install
 
 ```
-$ npm install --save URL_DO_GITHUB
+$ npm install --save https://github.com/nepente/compare-objectid.git
 ```
 
 
